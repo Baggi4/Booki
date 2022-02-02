@@ -333,13 +333,13 @@ footer {
   display: flex;
   flex-direction: column;
 }
-.footer h3 {
-  padding-bottom: 25px;
-}
 .footer a {
   margin: 0 0 15px;
 }
 @media screen and (max-width:992px){
+  body>*:not(footer){
+    width: 100%;
+  }
   .search, .Filters, .main-right>*, .activities>*, .footer-card {
     margin: 20px;
   }
@@ -348,30 +348,35 @@ footer {
   }
   .main {
     flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+  .main>*{
+    border-radius: 0;
   }
   .main-card-area>*, .main-right>* {
     margin: 40px 40px 20px 40px;
   }
   .main-card-area {
     margin: 0 0 20px 0;
+    background-color: var(--app-bg);
   }
   .main-left {
     justify-content: space-around;
   }
   .main-left .card-wrapper {
-    width: 43%;
+    width: 45%;
   }
   .main-right {
     margin-bottom: 20px;
   }
   .main-right-boxcard {
-  flex-direction: column-reverse;
-  display: flex;
-  justify-content: space-between;
+    flex-direction: column-reverse;
+    display: flex;
+    justify-content: space-between;
   }
   .main-right .card-wrapper {
     width: 100%;
-    min-height: 250px;
+    height: 200px;
     margin: 0 0 20px 0;
   }
   .activities-boxcard{
@@ -381,24 +386,21 @@ footer {
   .activities-boxcard>*{
     height: auto;
     width: 40%;
-    margin-bottom: 2vw;
-  }    
-  .activities-card-wrapper{
-    line-height: 56px;
-    font-size: 0.9rem;
+    margin-bottom: 20px;
   }
-  .footer-area {
-    justify-content: center;
+  .activities-boxcard img {
+    height: 130px;
+  }
+  footer {
+    padding: 0 30px;
   }
 }
 @media screen and (max-width: 768px) {
   body>*:not(.search){
     min-width: 375px;
-    width: 100%;
   }
   .search, .Filters, .main-right>*, .main-card-area, .activities>*, .footer-card {
     margin: 20px;
-    width: auto;
   }
   .main {
     margin: 0 auto;
@@ -481,9 +483,6 @@ footer {
     float: left;
     margin-right: 12px;
   }
-  .main>*{
-    border-radius: 0;
-  }
   .card-wrapper, .activities-card {
     width: 100%;
     margin-bottom: 30px;
@@ -499,21 +498,11 @@ footer {
     margin: 20px 0;
     justify-content: space-between;
   }
-  .main-right {
-    padding: 0;
-  }
-  .main-right .card-wrapper {
-    width: 100%;
-  }
- 
-  .main-card-area {
-    background-color: var(--app-bg);
-  }
   .main-left, .popular_boxcard, .footer-area, .activities-boxcard{
     flex-direction: column;
     align-content: flex-end;
   }
-  .activities-boxcard>* {
-    max-height: 250px;
+  footer {
+    padding: 0;
   }
 }
