@@ -370,7 +370,6 @@ footer {
     margin-bottom: 20px;
   }
   .main-right-boxcard {
-    flex-direction: column-reverse;
     display: flex;
     justify-content: space-between;
   }
