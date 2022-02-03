@@ -381,6 +381,7 @@ footer {
   .activities-boxcard{
     flex-direction: row;
     height:auto;
+    justify-content: space-around;
   }
   .activities-boxcard>*{
     height: auto;
@@ -503,5 +504,8 @@ footer {
   }
   footer {
     padding: 0;
+  }
+  .footer-card {
+    width: 100%;
   }
 }
