@@ -80,9 +80,7 @@ header .logo img {
   color: var(--buttons-color-primary);
   border-top: 5px solid var(--buttons-color-primary);
 }
-
 /* Search */
-
 .location-btn {
   border: 1px solid var(--cards-area-bg);
   background-color: var(--cards-area-bg);
@@ -192,7 +190,9 @@ input::placeholder {
 .main-card-area>*, .main-right>*{
   margin: 40px 40px 0 40px;
 }
-
+.main-right .card-info p {
+  margin-bottom: 0;
+}
 /* main-left */
 
 .main-left{
@@ -226,7 +226,10 @@ input::placeholder {
   justify-content: space-between;
   padding: 10px 0 5px 15px;
 }
-
+.main-left .card-info h2, .main-left .card-info p {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
 /*main-right*/
 
 .main-right-logo{
