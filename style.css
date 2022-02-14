@@ -171,7 +171,6 @@ input::placeholder {
   transform: scale(1.05);
 }
 .rate {
-  display: block;
   font-size: 13px;
   color: var(--cards-area-bg);
 }
@@ -254,7 +253,6 @@ input::placeholder {
   object-fit: cover;
   border-radius: 15px 0 0 15px;
 }
-
 .main-right .card-info {
   flex: 1;
   display: flex;
@@ -263,8 +261,8 @@ input::placeholder {
   padding: 10px 20px 10px 20px;
   background-color: var(--app-bg);
 }
-.card-info>*{
-  margin: 0;
+.main-right .card-info h2{
+  margin: 0 1vw 0 0;
 }
 /* Activité */
 .activities {
@@ -499,9 +497,6 @@ footer {
   .main-left, .popular_boxcard, .footer-area, .activities-boxcard{
     flex-direction: column;
     align-content: flex-end;
-  }
-  footer {
-    padding: 0;
   }
   .footer-card {
     width: 100%;
