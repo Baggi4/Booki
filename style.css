@@ -69,18 +69,14 @@ header .logo img {
   font-size: 14px;
   padding: 40px;
   min-height: 45px;
-  border-top: solid 2px transparent;
   background-color: var(--app-bg);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  transition: 0.3s;
+  transition: 0.1s;
+  border-top: 5px solid var(--app-bg);
 }
-.nav-link.active {
-  color: var(--buttons-color-primary);
-  border-top: 5px solid var(--buttons-color-primary);
-}
-.nav-link:not(.active):hover {
+.nav-link:hover {
   color: var(--buttons-color-primary);
   border-top: 5px solid var(--buttons-color-primary);
 }
@@ -127,7 +123,9 @@ header .logo img {
 .search-btn {
   display: none;
 }
-
+input::placeholder {
+  color: #000;
+}
 /* Filter */
 .Filters {
   margin: 20px auto;
@@ -262,7 +260,7 @@ header .logo img {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 10px 10px 10px 20px;
+  padding: 10px 20px 10px 20px;
   background-color: var(--app-bg);
 }
 .card-info>*{
